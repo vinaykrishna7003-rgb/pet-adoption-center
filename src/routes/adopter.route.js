@@ -1,6 +1,6 @@
 import express from 'express';
 import {
-  getAllAdoters,
+  getAllAdopters,
   getAdopterById,
   createAdopter,
   updateAdopter,
@@ -12,7 +12,7 @@ import {
 const router = express.Router();
 
 // Basic CRUD routes
-router.get('/', getAllAdoters);
+router.get('/', getAllAdopters);
 router.get('/:id', getAdopterById);
 router.post('/', createAdopter);
 router.put('/:id', updateAdopter);
