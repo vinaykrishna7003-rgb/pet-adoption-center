@@ -3,17 +3,17 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import './App.css';
 
 // Import pages
-import HomePage from './pages/HomePage';
-import BrowsePets from './pages/BrowsePets';
-import PetDetails from './pages/PetDetails';
-import AdoptionApplication from './pages/AdoptionApplication';
-import AdminDashboard from './pages/admin/AdminDashboard';
-import AdminPets from './pages/admin/AdminPets';
-import AdminAdopters from './pages/admin/AdminAdopters';
-import AdminShelters from './pages/admin/AdminShelters';
-import AdminApplications from './pages/admin/AdminApplications';
-import AdminAdoptions from './pages/admin/AdminAdoptions';
-import AdminStaff from './pages/admin/AdminStaff';
+import HomePage from './pages/HomePage.js';
+import BrowsePets from './pages/BrowsePets.js';
+import PetDetails from './pages/PetDetails.js';
+import AdoptionApplication from './pages/AdoptionApplication.js';
+import AdminDashboard from './pages/admin/AdminDashboard.js';
+import AdminPets from './pages/admin/AdminPets.js';
+import AdminAdopters from './pages/admin/AdminAdopters.js';
+import AdminShelters from './pages/admin/AdminShelters.js';
+import AdminApplications from './pages/admin/AdminApplications.js';
+import AdminAdoptions from './pages/admin/AdminAdoptions.js';
+import AdminStaff from './pages/admin/AdminStaff.js';
 
 function Navigation() {
   const location = useLocation();
