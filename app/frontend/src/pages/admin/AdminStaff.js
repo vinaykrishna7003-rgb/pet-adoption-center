@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { staffAPI, sheltersAPI } from '../../services/api';
+import { staffAPI, sheltersAPI } from '../../services/api.js';
 
 function AdminStaff() {
   const [staff, setStaff] = useState([]);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { adoptersAPI } from '../../services/api';
+import { adoptersAPI } from '../../services/api.js';
 
 function AdminAdopters() {
   const [adopters, setAdopters] = useState([]);

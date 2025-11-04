@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { petsAPI, applicationsAPI, adoptionsAPI, sheltersAPI } from '../../services/api';
+import { petsAPI, applicationsAPI, adoptionsAPI, sheltersAPI } from '../../services/api.js';
 
 function AdminDashboard() {
   const [stats, setStats] = useState({

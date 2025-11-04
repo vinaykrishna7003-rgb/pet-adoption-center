@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { adoptionsAPI, adoptersAPI, petsAPI } from '../../services/api';
+import { adoptionsAPI, adoptersAPI, petsAPI } from '../../services/api.js';
 
 function AdminAdoptions() {
   const [adoptions, setAdoptions] = useState([]);

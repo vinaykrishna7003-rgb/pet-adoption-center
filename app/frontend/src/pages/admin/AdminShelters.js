@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { sheltersAPI } from '../../services/api';
+import { sheltersAPI } from '../../services/api.js';
 
 function AdminShelters() {
   const [shelters, setShelters] = useState([]);

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { petsAPI } from '../services/api';
+import { petsAPI } from '../services/api.js';
 
 function PetDetails() {
   const { id } = useParams();
