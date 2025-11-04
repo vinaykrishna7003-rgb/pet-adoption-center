@@ -29,14 +29,19 @@ function AdminDashboard() {
       ]);
 
       setStats({
-        totalPets: petsRes.data.data?.length || 0,
-        availablePets: petStatsRes.data.data?.length || 0,
-        pendingApplications: appsRes.data.data?.length || 0,
-        totalAdoptions: adoptionsStatsRes.data.data?.total_adoptions || 0,
-        totalShelters: sheltersRes.data.data?.length || 0
+        totalPets: petsRes.data?.data?.length || petsRes.data?.length || 0,
+        availablePets: petStatsRes.data?.data?.length || petStatsRes.data?.length || 0,
+        pendingApplications: appsRes.data?.data?.length || appsRes.data?.length || 0,
+        totalAdoptions:
+          adoptionsStatsRes.data?.data?.total_adoptions ||
+          adoptionsStatsRes.data?.total_adoptions ||
+          adoptionsStatsRes.data?.length ||
+          0,
+        totalShelters: sheltersRes.data?.data?.length || sheltersRes.data?.length || 0
       });
 
-      setRecentAdoptions(recentAdoptionsRes.data.data?.slice(0, 5) || []);
+
+      setRecentAdoptions(recentAdoptionsRes.data?.slice(0, 5) || []);
     } catch (error) {
       console.error('Error fetching dashboard data:', error);
     } finally {
